@@ -1,10 +1,9 @@
-id = str(input("Enter user Id:"))
-pw = str(input("Enter password:"))
+cp = int(input("Enter the cost price: "))
+sp = int(input("Enter the selling price: "))
 
-uid = "parya3252@gmail.com"
-upw = "12345"
-
-if(id==uid and pw==upw):
-    print("valid")
+if(cp>sp):
+    loss = cp - sp
+    print(f'{loss} is your loss price ')
 else:
-    print("invalid")
+    profit = sp - cp 
+    print(f'{profit} is your loss price ')
