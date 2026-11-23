@@ -43,9 +43,9 @@ class Student:
         print(self.name)
     
     
-s1 = Student(12, "Sudhir", "Aug Python")
-s2 = Student(13, "Ram", "Sep Python")
-s3 = Student(14, "Sham", "July Python")
+# s1 = Student(12, "Sudhir", "Aug Python")
+# s2 = Student(13, "Ram", "Sep Python")
+# s3 = Student(14, "Sham", "July Python")
 
 #1
 # s1.display()
@@ -63,7 +63,7 @@ s3 = Student(14, "Sham", "July Python")
 # print(s1.iName)
 print(Student.iName)
 Student.iName = "FIrstBit Solutions"
-print(s3.iName)
+print(Student.iName)
 
 
 #3
