@@ -47,19 +47,26 @@ s1 = Student(12, "Sudhir", "Aug Python")
 s2 = Student(13, "Ram", "Sep Python")
 s3 = Student(14, "Sham", "July Python")
 
-s1.display()
+#1
+# s1.display()
+# # s1.setName("Sudhir Kumar")
+
+# s2.display()
+# s3.display()
+
 # s1.setName("Sudhir Kumar")
+# s1.display()
 
-s2.display()
-s3.display()
+ 
+ 
+#2
+# print(s1.iName)
+print(Student.iName)
+Student.iName = "FIrstBit Solutions"
+print(s3.iName)
 
-s1.setName("Sudhir Kumar")
-s1.display()
 
-
-
-
-
+#3
 # def change(newval):
 #     a=10
 #     print(a)
