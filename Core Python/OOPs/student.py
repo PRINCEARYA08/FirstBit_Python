@@ -1,10 +1,10 @@
 class Student:
-    
-    def __init__(self, frn, name, batch, iName):
+    iName = "FBS"
+    def __init__(self, frn, name, batch):
         self.frn = frn
         self.name = name
         self.batch = batch
-        self.iName = iName
+      
 
     def getFRN(self):
         return self.frn
@@ -31,7 +31,7 @@ class Student:
         self.iName = nIName
 
     def display(self):
-        print(f"FRN={self.frn} Name={self.name} Batch={self.batch} IName={self.iName}")
+        print(f"FRN={self.frn} Name={self.name} Batch={self.batch} IName={Student.iName}")
 
     def __del(self):
         print(f"Destructor called for {self.name}")
@@ -43,19 +43,18 @@ class Student:
         print(self.name)
     
     
-    
-    
-    
-    
-s1 = Student(12, "Sudhir", "Aug Python", "FBS")
-s2 = Student(13, "Ram", "Sep Python", "FBS")
-s3 = Student(14, "Sham", "July Python", "FBS")
+s1 = Student(12, "Sudhir", "Aug Python")
+s2 = Student(13, "Ram", "Sep Python")
+s3 = Student(14, "Sham", "July Python")
 
 s1.display()
-s1.setName("Sudhir Kumar")
-s1.display()
+# s1.setName("Sudhir Kumar")
+
 s2.display()
 s3.display()
+
+s1.setName("Sudhir Kumar")
+s1.display()
 
 
 
